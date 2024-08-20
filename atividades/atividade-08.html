@@ -1,103 +1,37 @@
-<script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero01 = parseFloat(prompt('Digite o 1° valor'));
+        let numero02 = parseFloat(prompt('Digite o 2° valor'));
+        let operacao = prompt('Digite a operador');
+        let resultado = 0
 
-// let numero =  prompt( 'Solicite ao usuario dois numeros inteiros e a operacao desejada.');
-// let numero = prompt('Digite um numero');
-//     console.log(typeof(numero));
+        document.write('Calculadora' + '<br>');
+        document.write('1° Valor: ' + numero01 + '<br>');
+        document.write('2° Valor: ' + numero02 + '<br>');
 
-//     let numero2 = parseInt(prompt('Digite o segundo numero'));
-//     console.log(typeof(numero2));
-
-//     let numero3 = parseFloat(prompt('Digite o terceiro numero'));
-//     console.log(typeof(numero3));
-
-// Pedir os numeros ao usuario
-// pedir a operação (* / + -)
-// usar o Switch comparando a operação que o usuario digitou
-
-<script>
-        let calculadora = prompt('Digita se você quer -, +, *, /')
-        let Valor1 = prompt('Digite o Primeiro Valor')
-        let Valor2 = prompt('Digite o Segundo Valor')
- 
-        switch (calculadora) {
- 
-            case '-':
-            console.log(Valor1 - Valor2)
-            let menos = Valor1 - Valor2;
-            document.write(Valor1 + '<br>' + Valor2 + '<br>' + calculadora + menos)
-            break;
- 
+        switch (operacao) {
             case '+':
-            console.log(Valor1 + Valor2)
-            let mais = Valor1 + Valor2;
-            document.write(Valor1 + '<br>' + Valor2 + '<br>' + calculadora + mais)
+            document.write('Soma: ' + (numero01 + numero02))
             break;
- 
+            case '-':
+            document.write('Subtração: ' + (numero01 - numero02))
+            break;
             case '*':
-            console.log(Valor1 * Valor2)
-            let multiplicacao = Valor1 * Valor2;
-            document.write(Valor1 + '<br>' + Valor2 + '<br>' + calculadora + multiplicacao)
+            document.write('Multiplicação: ' + (numero01 * numero02))
             break;
-           
             case '/':
-            console.log(Valor1 / Valor2)
-            let divisao = Valor1 / Valor2;
-            document.write(Valor1 + '<br>' + Valor2 + '<br>' + calculadora + divisao)
+            document.write('Divisão: ' + (numero01 + numero02))
             break;
+            
         }
+
     </script>
-
-
-
-
-
-
-
-
-// switch (numero) {
-//       case '6':
-//         document.write('');
-//         break;
-//       case '3':
-//         document.write('<h1>Fevereiro!</h1>');
-//         break;
-//       case '18':
-//         document.write('<h1>Março!</h1>');
-//         break;
-//       case '4':
-//         document.write('<h1>Abril!</h1>');
-//         break;
-//       case '5':
-//         document.write('<h1>Maio!</h1>');
-//         break;
-//       case '6':
-//         document.write('<h1>Junho!</h1>');
-//         break;
-//       case '7':
-//         document.write('<h1>Julho!</h1>');
-//         break;
-//       case '8':
-//         document.write('<h1>Agosto!</h1>');
-//         break;
-//       case '9':
-//         document.write('<h1>Setembro!</h1>');
-//         break;
-//       case '10':
-//         document.write('<h1>Outubro!</h1>');
-//         break;
-//       case '11':
-//         document.write('<h1>Novembro!</h1>');
-//         break;
-//       case '12':
-
-// }
-
-
-
-
-
-
-
-
-
-</script>
+</body>
+</html>
