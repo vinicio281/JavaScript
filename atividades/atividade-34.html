@@ -25,6 +25,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
 
 
@@ -41,19 +42,23 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 300px;
+            width: 280px;
         }
 
         input {
-            width: 300px;
+            width: 280px;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 6px;
         }
 
-        button:hover {
-            background-color: #4cae4c;
+        #salvar{
+            margin-right: 295px;
+            width: 70%;
+            /* height: 8px; */
+            background-color: white;
+            color: black;
         }
 
         #corpo {
@@ -64,28 +69,57 @@
         #barras {
             text-align: left;
         }
+
+        img {
+            width: 200px;
+            margin-left: 55px;
+
+        }
+
+        .flex{
+            display: flex;
+        }
+
+
     </style>
 
     <div id="corpo">
+        <h2>Formulário de Login</h2>
 
 
-        <form action="#" name="Cadastro">
-            <h2>Cadastro</h2>
+        <form action="#" name="formulario de login">
+
 
             <div id="barras">
-                <label for="username">Nome:</label>
-                <input type="text" id="username" name="username"><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
+                <label for="foto">
+                    <img src="../atividades/icone.img/depositphotos_251916955-stock-illustration-user-glyph-color-icon.jpg"
+                        alt="Ícone de Foto" class="icone">
+                </label>
+
+
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username"><br>
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha"><br><br>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Login</button>
+
+            
+
+            <div class="flex">
+                <input type="checkbox">
+                <button id="salvar" type="salvar">Salvardados</button>
+    
+            </div>
+
 
         </form>
+
+
+
     </div>
 
 
